@@ -16,3 +16,5 @@ const Routes = () => (
 	</Router>
 );
 export default Routes;
+
+//this.props.params.productId

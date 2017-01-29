@@ -7,3 +7,38 @@ body {
 .container {
 	margin: 50px 70px;
 }
+
+.product-card {
+	margin-bottom: 20px;
+}
+
+
+
+.product-card-link {
+	padding: 16px;	
+}
+
+
+@media(min-width: 768px) {
+
+	.product-card-header, .product-card-link {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.product-card-header {
+		width: 70%;
+	}
+
+	.product-card-link {
+		width: calc(30% - 32px) ;
+		text-align: right;
+	}
+}
+
+@media(max-width: 767px) {
+	.product-card-link {
+		padding-left: 56px;	
+		padding-top: 0;
+	}
+}
