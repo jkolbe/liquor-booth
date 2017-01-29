@@ -1,7 +1,13 @@
 # Liquor Booth
 
-Using 
-
+API 
 * LCBO API https://lcboapi.com/docs/v1
-* Material-UI http://www.material-ui.com/#/
+
+
+Libraries
+* jquery
+* react-router
+* react-tap-event-plugin
+* material-ui
+
 
