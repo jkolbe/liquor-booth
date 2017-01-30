@@ -4,7 +4,7 @@ import { Router, Route, browserHistory } from 'react-router';
 import Nav from '../containers/navigation/navigation';
 import Home from '../containers/home/home';
 import Products from '../containers/product/product';
-import Product from '../components/product/product-item';
+import Product from '../containers/product/product-item';
 
 const Routes = () => (
 	<Router history={browserHistory}>
@@ -16,5 +16,3 @@ const Routes = () => (
 	</Router>
 );
 export default Routes;
-
-//this.props.params.productId

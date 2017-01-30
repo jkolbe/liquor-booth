@@ -8,6 +8,12 @@ body {
 .product-card-link { padding: 16px;}
 .nav-buttons-next { float: right; }
 
+.product-image {
+	max-width: 100% !important;
+	max-height: 300px;
+	min-width: initial !important;
+    width: initial !important;
+}
 
 @media(min-width: 768px) {
 
