@@ -23,8 +23,6 @@ export default class Product extends Component {
 			next_page_path: "",
 			previous_page_path: ""
 		};	
-
-		this.getProducts = this.getProducts.bind(this);	
 	}
 
 	getProducts(overWriteURL) {
@@ -39,10 +37,6 @@ export default class Product extends Component {
 		);
 	}
 
-	test(overWriteURL) {
-		console.log(overWriteURL);
-	}
-
 	componentDidMount() {
 		this.getProducts();
 	}
@@ -50,6 +44,7 @@ export default class Product extends Component {
 	render() {
 		return (
 			<div className="container">
+				
 				<ProductList products={this.state.products} />
 
 				<div className="nav-buttons">
@@ -72,8 +67,6 @@ export default class Product extends Component {
 				</div>
 
 			</div>
-
 		)
 	}
-
 }

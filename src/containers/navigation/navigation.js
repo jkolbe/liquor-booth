@@ -7,8 +7,8 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 
 // Icons
-import ActionHome from 'material-ui/svg-icons/action/home';
-import IconFace from 'material-ui/svg-icons/action/face';
+import IconHome from 'material-ui/svg-icons/action/home';
+import IconLoyalty from 'material-ui/svg-icons/action/loyalty';
 
 
 export default class Navigation extends Component {
@@ -41,13 +41,13 @@ export default class Navigation extends Component {
 						containerElement={<Link to="/" />}
 						onTouchTap={this.handleClose}
 						primaryText="Home"
-						leftIcon={<ActionHome />}
+						leftIcon={<IconHome />}
 					/>
 					<MenuItem
 						containerElement={<Link to="/product" />}
 						onTouchTap={this.handleClose}
 						primaryText="Products"
-						leftIcon={<IconFace />}
+						leftIcon={<IconLoyalty />}
 					/>
 				</Drawer>
 				
