@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { Link } from 'react-router';
 
 import {Card, CardHeader} from 'material-ui/Card';
@@ -30,5 +30,9 @@ const ProductList = ({
 		))}
 	</div>
 );
+
+ProductList.propTypes = {
+  products: PropTypes.array.isRequired,
+};
 
 export default ProductList;

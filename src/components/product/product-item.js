@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
@@ -19,14 +19,13 @@ export default function ProductItem({product}){
 
 	return (
 	<div>
-		{console.log(product)}
 		<Card>
 			<CardHeader
 				actAsExpander={true}
 				showExpandableButton={true}/>
 			<CardMedia overlay={
 				<CardTitle 
-					title={product.name} 
+					title={<span className="product-title">{product.name}</span>}
 					subtitle={`${product.primary_category} | ${product.style}`}
 				/>} >
     			<div style={{textAlign: 'center'}}>
@@ -61,4 +60,9 @@ export default function ProductItem({product}){
 		</Card>
 	</div>
 	)
+};
+
+
+ProductItem.propTypes = {
+  product: PropTypes.object.isRequired,
 };

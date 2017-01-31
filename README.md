@@ -9,5 +9,8 @@ Libraries
 * react-router
 * react-tap-event-plugin
 * material-ui
-
+* react-addons-test-utils
+* chai
+* enzyme
+* sinon
 

@@ -34,7 +34,7 @@ export default class ProductItem extends Component {
 	render() {
 		return (
 			<div className="container">
-				<Product product={this.state.product}/>
+				<Product product={this.state.product} />
 			</div>
 		)
 	}
