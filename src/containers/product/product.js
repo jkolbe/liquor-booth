@@ -5,6 +5,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import IconRight from 'material-ui/svg-icons/navigation/chevron-right';
 import IconLeft from 'material-ui/svg-icons/navigation/chevron-left';
 
+//import {ACCESS_KEY} from '../../constants/api-url.js'
+
 import ProductList from '../../components/product/product-list';
 
 export default class Product extends Component {

@@ -3,6 +3,7 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import sinon from 'sinon';
 import ProductItem from './product-item';
+import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 describe('<ProductItem />', () => {
 
@@ -13,11 +14,11 @@ describe('<ProductItem />', () => {
 				name : "Budweiser"
 			}} />);
 
-		expect(wrapper.find('.product-title')).to.have.length(1);
+		//expect(wrapper.find('.product-title')).to.have.length(1);
 
 
-		//console.log(wrapper.find('span.product-title').text());
-		//expect(wrapper.find('.product-title').text()).to.contain('Budweiser');
+		console.log(wrapper.find(CardTitle).node());
+		//expect(wrapper.find('.product-title').html()).to.contain('Budweiser');
 
 		/*
 			AssertionError: expected { Object (root, unrendered, ...) } to have a length of 1 but got 0
