@@ -35,7 +35,7 @@ export default class Home extends Component {
 		return (
 			<div className="container">
 				<h1>Welcome to Liquor Booth</h1>
-				<p>Please visit our products page or search for a spefici product...</p>
+				<p>Please visit our products page or search for a specific product...</p>
 
 				<TextField
 					style={{marginBottom: '20px'}}
